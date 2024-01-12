@@ -14,10 +14,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
             quick-tap-ms = <200>;
         };
 
@@ -25,7 +25,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFTHR";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <185>;
             flavor = "tap-preferred";
