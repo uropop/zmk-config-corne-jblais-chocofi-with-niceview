@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B            &kp J      &kp L              &kp U             &kp Y              &kp APOS             &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G            &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
-&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V            &kp K      &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &lt 2 TAB                &lt 1 ESCAPE           &kp BACKSPACE    &kp SPACE  &lt 1 ENTER        &lt 2 TAB
+&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B           &kp J        &kp L              &kp U             &kp Y              &kp APOS             &none
+&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G           &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
+&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V           &kp K        &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
+                                            &lt 2 TAB                &lt 1 BACKSPACE        &lt 1 ESCAPE    &lt 1 ENTER  &lt 1 SPACE        &lt 2 TAB
             >;
 
             label = "home";
