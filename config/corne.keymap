@@ -72,9 +72,11 @@
 &none  &kp Z            &kp X           &kp C             &kp D                  &kp V           &kp K        &kp H                   &kp COMMA         &kp DOT          &hm SEMICOLON SLASH  &none
                                         &lt 2 TAB         &kp BSPC               &lt 1 ESCAPE    &lt 1 ENTER  &kp SPACE               &lt 2 TAB
             >;
+
+            label = "home";
         };
 
-        raise_layer {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -87,15 +89,19 @@
 &none  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &none
                                 &none                 &kp DELETE             &none        &kp RET    &kp N0        &kp RALT
             >;
+
+            label = "num";
         };
 
-        layer_3 {
+        nav {
             bindings = <
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &none        &back       &kp PAGE_DOWN   &kp PG_UP     &fwd       &trans  &trans
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN    &bt BT_CLR  &bt BT_PRV      &bt BT_NXT    &trans     &trans  &trans
                          &trans  &trans  &trans       &trans      &trans          &trans
             >;
+
+            label = "nav";
         };
     };
 };
