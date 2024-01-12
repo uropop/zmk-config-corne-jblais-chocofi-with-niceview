@@ -70,10 +70,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W           &kp F             &kp P                  &kp B           &kp J        &kp L                   &kp U             &kp Y            &kp APOS             &none
-&none  &hm A LEFT_META  &hm R LEFT_ALT  &shifthr S LCTRL  &shifthr T LEFT_SHIFT  &kp G           &kp M        &shifthr N RIGHT_SHIFT  &shifthr E RCTRL  &hm I RIGHT_ALT  &kp O                &none
-&none  &kp Z            &kp X           &kp C             &kp D                  &kp V           &kp K        &kp H                   &kp COMMA         &kp DOT          &hm SEMICOLON SLASH  &none
-                                        &kp A             &kp BSPC               &lt 1 ESCAPE    &lt 1 ENTER  &kp SPACE               &lt 2 TAB
+&none  &kp Q            &kp W           &kp F                    &kp P                  &kp B           &kp J        &kp L              &kp U             &kp Y            &kp APOS             &none
+&none  &hm LEFT_META A  &hm LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G           &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &hm RIGHT_ALT I  &kp O                &none
+&none  &kp Z            &kp X           &kp C                    &kp D                  &kp V           &kp K        &kp H              &kp COMMA         &kp DOT          &hm SEMICOLON SLASH  &none
+                                        &kp A                    &kp BSPC               &lt 1 ESCAPE    &lt 1 ENTER  &kp SPACE          &lt 2 TAB
             >;
 
             label = "home";
