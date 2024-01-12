@@ -57,6 +57,7 @@
         jk_fix {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
+            layers = <1>;
         };
     };
 
