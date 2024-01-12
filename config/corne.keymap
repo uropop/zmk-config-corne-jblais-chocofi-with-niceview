@@ -40,6 +40,22 @@
         };
     };
 
+    macros {
+        back: back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp H>;
+            label = "BACK";
+        };
+
+        fwd: fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp L>;
+            label = "FWD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,7 +91,7 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &none        &none       &kp PAGE_DOWN   &kp PG_UP     &trans     &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &none        &back       &kp PAGE_DOWN   &kp PG_UP     &fwd       &trans  &trans
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN    &bt BT_CLR  &bt BT_PRV      &bt BT_NXT    &trans     &trans  &trans
                          &trans  &trans  &trans       &trans      &trans          &trans
