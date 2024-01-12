@@ -14,6 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
@@ -25,6 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFTHR";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <185>;
             flavor = "tap-preferred";
@@ -71,7 +73,7 @@
 &none  &kp Q            &kp W           &kp F             &kp P                  &kp B           &kp J        &kp L                   &kp U             &kp Y            &kp APOS             &none
 &none  &hm A LEFT_META  &hm R LEFT_ALT  &shifthr S LCTRL  &shifthr T LEFT_SHIFT  &kp G           &kp M        &shifthr N RIGHT_SHIFT  &shifthr E RCTRL  &hm I RIGHT_ALT  &kp O                &none
 &none  &kp Z            &kp X           &kp C             &kp D                  &kp V           &kp K        &kp H                   &kp COMMA         &kp DOT          &hm SEMICOLON SLASH  &none
-                                        &lt 2 TAB         &kp BSPC               &lt 1 ESCAPE    &lt 1 ENTER  &kp SPACE               &lt 2 TAB
+                                        &kp A             &kp BSPC               &lt 1 ESCAPE    &lt 1 ENTER  &kp SPACE               &lt 2 TAB
             >;
 
             label = "home";
