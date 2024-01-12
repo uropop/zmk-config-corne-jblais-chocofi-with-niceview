@@ -53,6 +53,11 @@
             bindings = <&kp CAPS>;
             key-positions = <16 19>;
         };
+
+        jk_fix {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
