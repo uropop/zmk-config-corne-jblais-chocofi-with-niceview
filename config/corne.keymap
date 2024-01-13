@@ -50,7 +50,7 @@
         compatible = "zmk,combos";
 
         caps {
-            bindings = <&kp CAPS>;
+            bindings = <&caps_word>;
             key-positions = <16 19>;
         };
 
@@ -58,6 +58,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             layers = <1>;
+        };
+
+        uniesc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <15 20>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <25 34>;
         };
     };
 
