@@ -67,7 +67,12 @@
 
         under {
             bindings = <&kp UNDER>;
-            key-positions = <25 34>;
+            key-positions = <28 31>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <4 7>;
         };
     };
 
