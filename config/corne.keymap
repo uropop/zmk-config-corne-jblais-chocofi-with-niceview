@@ -88,10 +88,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B           &kp J        &kp L              &kp U             &kp Y              &kp APOS             &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G           &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
-&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V           &kp K        &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &lt 2 TAB                &lt 1 BACKSPACE        &lt 1 ESCAPE    &lt 1 ENTER  &lt 1 SPACE        &lt 2 ENTER
+&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B        &kp J        &kp L              &kp U             &kp Y              &kp APOS             &none
+&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G        &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
+&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V        &kp K        &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
+                                            &none                    &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &none
             >;
 
             label = "home";
@@ -116,10 +116,10 @@
 
         nav {
             bindings = <
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &bt BT_CLR    &kp LS(H)  &kp PAGE_DOWN   &kp PG_UP     &kp LS(L)  &trans  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &bt BT_NXT    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN     &none      &none           &none         &trans     &trans  &trans
-                         &trans  &trans  &trans        &trans     &trans          &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR    &kp LS(H)  &kp PAGE_DOWN   &kp PG_UP     &kp LS(L)  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_NXT    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN     &none      &none           &none         &trans     &trans  &trans
+                         &trans   &trans   &trans        &trans     &trans          &trans
             >;
 
             label = "nav";
