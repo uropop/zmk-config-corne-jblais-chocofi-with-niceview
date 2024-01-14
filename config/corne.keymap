@@ -77,19 +77,6 @@
     };
 
     macros {
-        back: back {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp H>;
-            label = "BACK";
-        };
-
-        fwd: fwd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp L>;
-            label = "FWD";
-        };
     };
 
     keymap {
