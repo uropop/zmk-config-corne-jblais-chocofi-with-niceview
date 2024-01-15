@@ -62,7 +62,7 @@
 
         uniesc {
             bindings = <&kp ESCAPE>;
-            key-positions = <15 20>;
+            key-positions = <37 40>;
         };
 
         under {
