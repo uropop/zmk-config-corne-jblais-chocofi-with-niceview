@@ -101,7 +101,7 @@
 &none  &kp Q              &kp W             &kp F                    &kp P                  &kp B        &kp J        &kp L              &kp U             &kp Y              &kp APOS             &none
 &none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G        &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
 &none  &kp Z              &kp X             &kp C                    &kp D                  &kp V        &kp K        &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &kp ESCAPE               &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &save
+                                            &kp ESCAPE               &lt 1 LC(BACKSPACE)    &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &save
             >;
 
             label = "home";
@@ -118,7 +118,7 @@
 &none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9        &kp ASTERISK   &none
 &none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON      &none
 &none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &none
-                                                &none                       &kp DELETE                        &kp DEL      &kp RET    &kp SPACE     &kp N0
+                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
             >;
 
             label = "num";
@@ -126,7 +126,7 @@
 
         nav {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none              &kp LS(H)       &kp PAGE_DOWN         &kp PG_UP           &kp LS(L)        &bt BT_CLR  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &email             &kp LS(H)       &kp PAGE_DOWN         &kp PG_UP           &kp LS(L)        &bt BT_CLR  &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &hm LC(V) LC(C)    &hm LA(H) LEFT  &hm LA(J) DOWN_ARROW  &hm LA(K) UP_ARROW  &hm LA(L) RIGHT  &bt BT_NXT  &trans
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN          &kp LA(TAB)     &none                 &none               &trans           &trans      &trans
                          &trans   &trans   &trans             &trans          &trans                &trans
