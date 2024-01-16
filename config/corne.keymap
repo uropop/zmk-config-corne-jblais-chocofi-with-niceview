@@ -44,6 +44,13 @@
             require-prior-idle-ms = <125>;
             quick-tap-ms = <230>;
         };
+
+        backspace: backspace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
+        };
     };
 
     combos {
