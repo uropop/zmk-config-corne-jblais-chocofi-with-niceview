@@ -81,7 +81,7 @@
         save: save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp COLON &kp W &kp ENTER>;
+            bindings = <&macro_tap>, <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
 
             label = "SAVE";
         };
