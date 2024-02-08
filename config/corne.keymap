@@ -75,16 +75,6 @@
             bindings = <&kp MINUS>;
             key-positions = <4 7>;
         };
-
-        reset_bt {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 11>;
-        };
-
-        next_bt {
-            bindings = <&bt BT_NXT>;
-            key-positions = <24 35>;
-        };
     };
 
     macros {
@@ -146,7 +136,7 @@
 &trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &kp LS(H)       &kp PAGE_DOWN  &kp PG_UP     &kp LS(L)  &none  &trans
 &trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &trans
 &trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)       &kp LA(TAB)    &none         &kp LA(L)  &none  &trans
-                                           &trans        &trans             &trans             &trans          &trans         &trans
+                                           &bt BT_CLR    &bt BT_NXT         &trans             &trans          &trans         &trans
             >;
 
             label = "nav";
