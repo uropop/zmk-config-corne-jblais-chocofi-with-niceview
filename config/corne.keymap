@@ -82,7 +82,7 @@
         save: save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp ESCAPE &kp COLON &kp W &kp ENTER>;
+            bindings = <&macro_tap>, <&kp ESCAPE &kp DE_COLON &kp DE_W &kp ENTER>;
 
             label = "SAVE";
         };
@@ -90,7 +90,7 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp J &kp O &kp S &kp H &kp AT &kp J &kp O &kp S &kp H &kp B &kp L &kp A &kp I &kp S &kp DOT &kp C &kp O &kp M>;
+            bindings = <&none &kp DE_U &kp DE_R &kp DE_O &kp DE_S &kp AT &kp DE_P &kp DE_O &kp DE_P &kp DE_O &kp DE_DOT &kp DE_V &kp DE_C>;
             label = "EMAIL";
         };
     };
@@ -100,15 +100,15 @@
 
         home {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // | none |  Q  |  W  |  E  |  R  |  T  |   |  z  |  U   |  I  |  O  |  P  | none |
+            // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  | none |
+            // | none |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | none |
+            //                    | ESC | BCK | TAB |   | ENT | SPC  | SAVE |
 
             bindings = <
-&none  &kp Q              &kp W             &kp F                     &kp P                  &kp B        &kp J        &kp L              &kp U             &kp Y              &kp APOS             &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S   &shifthr LEFT_SHIFT T  &kp G        &kp M        &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &kp O                &none
-&none  &kp Z              &kp X             &kp C                     &kp D                  &kp V        &kp K        &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
+&none  &kp DE_Q              &kp DE_W             &kp DE_E                     &kp DE_R                  &kp DE_T        &kp DE_Z        &kp DE_U              &kp DE_I             &kp DE_O              &kp DE_P             &none
+&none  &weak LEFT_META DE_A  &weak LEFT_ALT DE_S  &shifthr LEFT_CONTROL DE_D   &shifthr LEFT_SHIFT DE_F  &kp DE_G        &kp DE_H        &shifthr RSHIFT DE_J  &shifthr RCTRL DE_K  &weak RIGHT_ALT DE_L  &kp DE_Ö             &none
+&none  &kp DE_Y              &kp DE_X             &kp DE_C                     &kp DE_V                  &kp DE_B        &kp DE_N        &kp DE_M              &kp DE_COMMA         &kp DE_DOT            &hm DE_SEMICOLON DE_SLASH  &none
                                             &hm LC(BACKSPACE) ESCAPE  &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &save
             >;
 
@@ -117,26 +117,32 @@
 
         num {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // | none |  !  |  @  |  {  |  }  |  |  |   |  +  |  7  |  8  |  9  |  *  | none |
+            // | none |  #  |  €  |  $  |  "  |  '  |   |  -  |  4  |  5  |  6  |  :  | none |
+            // | none |  %  |  ^  |  (  |  )  |  ~  |   |  =  |  1  |  2  |  3  |  \  | none |
+            //                    | none| BCK | DEL |   | RET |SPACE|  0  |
 
             bindings = <
-&none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &none
-&none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &none
-&none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &none
-                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
+&none  &kp EXCL            &kp DE_AT               &kp DE_LEFT_BRACE              &kp DE_RIGHT_BRACE                   &kp DE_PIPE     &kp DE_PLUS   &kp DE_NUMBER_7  &kp DE_N8        &kp DE_N9                    &kp DE_ASTERISK   &none
+&none  &hm LEFT_META DE_HASH  &hm LEFT_ALT DE_EURO  &hm LCTRL DE_DOLLAR  &hm LEFT_SHIFT DE_PARENTHESIS  &kp DE_GRAVE    &kp DE_MINUS  &kp DE_NUMBER_4  &kp DE_NUMBER_5  &kp DE_NUMBER_6              &kp DE_COLON      &none
+&none  &kp DE_PERCENT         &kp DE_CARET            &kp DE_LEFT_BRACKET            &kp DE_RIGHT_BRACKET                 &kp DE_TILDE    &kp DE_EQUAL  &kp DE_NUMBER_1  &kp DE_NUMBER_2  &shifthr DE_PERIOD DE_NUMBER_3  &kp DE_BACKSLASH  &none
+                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp DE_RET    &kp SPACE     &kp DE_N0
             >;
 
             label = "num";
         };
 
         nav {
+            // -----------------------------------------------------------------------------------------
+            // | none |  F1  |  F2  |  F3  |  F4  | @email |  |SHFT-H| PG_D  | PG_Up |SHFT-L|    | none |
+            // | none |  F5  |  F6  |  F7  |  F8  |SHFT-C/V|  | ar_l |ar_down| ar_up | ar_r |    | none |
+            // | none |  F9  |  F10 |  F11 |  F12 | print  |  | alt-H|alt-tab|       | alt-L|    | none |
+            //                  | BT-CLR | BT-NXT | &trans |  | &trans | &trans | &trans |
+
             bindings = <
-&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &kp LS(H)       &kp PAGE_DOWN  &kp PG_UP     &kp LS(L)  &none  &trans
-&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &trans
-&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)       &kp LA(TAB)    &none         &kp LA(L)  &none  &trans
+&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email                   &kp LS(DE_H)       &kp DE_PAGE_DOWN  &kp DE_PG_UP     &kp LS(DE_L)  &none  &trans
+&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(DE_V) LC(DE_C)    &kp DE_LEFT_ARROW  &kp DE_DOWN       &kp DE_UP_ARROW  &kp DE_RIGHT  &none  &trans
+&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp DE_PSCRN             &kp LA(DE_H)       &kp LA(DE_TAB)    &none            &kp LA(DE_L)  &none  &trans
                                            &bt BT_CLR    &bt BT_NXT         &trans             &trans          &trans         &trans
             >;
 
