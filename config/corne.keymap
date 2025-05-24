@@ -101,14 +101,14 @@
         home {
             // -----------------------------------------------------------------------------------------
             // | none |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U   |  I  |  O  |  P  | none |
-            // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  | none |
+            // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  oe | none |
             // | none |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | none |
             //                    | ESC | BCK | TAB |   | ENT | SPC  | SAVE |
 
             bindings = <
-&none  &kp DE_Q              &kp DE_W             &kp DE_E                    &kp DE_R                  &kp DE_T        &kp DE_Z     &kp DE_U              &kp DE_I             &kp DE_O              &kp DE_P                   &none
-&none  &weak LEFT_META DE_A  &weak LEFT_ALT DE_S  &shifthr LEFT_CONTROL DE_D  &shifthr LEFT_SHIFT DE_F  &kp DE_G        &kp DE_H     &shifthr RSHIFT DE_J  &shifthr RCTRL DE_K  &weak RIGHT_ALT DE_L  &kp DE_O_UMLAUT            &none
-&none  &kp DE_Y              &kp DE_X             &kp DE_C                    &kp DE_V                  &kp DE_B        &kp DE_N     &kp DE_M              &kp DE_COMMA         &kp DE_DOT            &kp DE_MINUS               &none
+&none  &kp DE_Q              &kp DE_W             &kp DE_E                    &kp DE_R                  &kp DE_T        &kp DE_Z     &weak DE_U_UMLAUT DE_U  &kp DE_I             &weak DE_O_UMLAUT DE_O  &weak LG(DE_L) DE_P        &none
+&none  &weak DE_A_UMLAUT DE_A  &weak LEFT_ALT DE_S  &shifthr LEFT_CONTROL DE_D  &shifthr LEFT_SHIFT DE_F  &kp DE_G        &kp DE_H     &shifthr RSHIFT DE_J    &shifthr RCTRL DE_K  &weak RIGHT_ALT DE_L  &kp DE_O_UMLAUT            &none
+&none  &weak LEFT_META DE_Y    &kp DE_X             &kp DE_C                    &kp DE_V                  &kp DE_B        &kp DE_N     &kp DE_M              &kp DE_COMMA         &kp DE_DOT              &kp DE_MINUS               &none
                                                   &hm LC(BACKSPACE) ESCAPE    &lt 1 BACKSPACE           &lt 2 TAB       &lt 2 ENTER  &lt 1 SPACE           &save
             >;
 
@@ -117,7 +117,7 @@
 
         num {
             // -----------------------------------------------------------------------------------------
-            // | none |  !  |  @  |  {  |  }  |  |  |   |  +  |  7  |  8  |  9  |  *  | none |
+            // | none |  !  |  @  |  {  |  }  | "|" |   |  +  |  7  |  8  |  9  |  *  | none |
             // | none |  #  |  €  |  (  |  )  |  '  |   |  -  |  4  |  5  |  6  |  :  | none |
             // | none |  %  |  ^  |  [  |  ]  |  ~  |   |  =  |  1  |  2  |  3  |  \  | none |
             //                    | none| BCK | DEL |   | RET |SPACE|  0  |
@@ -142,7 +142,7 @@
             bindings = <
 &trans  &kp F1            &kp F2           &kp F3        &kp F4             &email                   &kp LS(DE_H)       &kp DE_PAGE_DOWN  &kp PG_UP     &kp LS(DE_L)  &none  &trans
 &trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(DE_V) LC(DE_C)    &kp LEFT_ARROW     &kp DOWN          &kp UP_ARROW  &kp RIGHT     &none  &trans
-&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN                &kp LA(DE_H)       &kp LA(DE_TAB)    &none         &kp LA(DE_L)  &none  &trans
+&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN                &kp LA(DE_H)       &kp LA(TAB)       &none         &kp LA(DE_L)  &none  &trans
                                            &bt BT_CLR    &bt BT_NXT         &trans                   &trans             &trans            &trans
             >;
 
